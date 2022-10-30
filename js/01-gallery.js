@@ -23,6 +23,7 @@ console.log(galleryMarkup)
 let instance = "";
  gallery.addEventListener("click", onImageClick)
 function onImageClick(event) {
+    event.preventDefault();
 if (event.target.nodeName !== "IMG") { 
     return };
 instance = basicLightbox.create(
